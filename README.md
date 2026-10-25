@@ -1,4 +1,19 @@
-# 📚 Electronic Library — Full-Stack MERN Application
+# 📚 Electronic Library — MERN Stack
+
+<p align="center">
+  <img src="assets/library-preview.png" alt="Electronic Library Project Preview" width="850" />
+</p>
+
+<p align="center">
+  A modern full-stack electronic library platform built with the MERN stack.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-Frontend-61DAFB?logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express.js-API-000000?logo=express&logoColor=white" alt="Express.js" />
+  <img src="https://img.shields.io/badge/MongoDB-Database-47A248?logo=mongodb&logoColor=white" alt="MongoDB" />
+</p>
 
 A full-stack electronic library platform built with the MERN stack, designed to provide users with an intuitive experience for exploring and accessing books, alongside an administrative dashboard for managing library content and users.
 
