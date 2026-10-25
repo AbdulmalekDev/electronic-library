@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0062D1" />
+    <meta name="description" content="مكتبة عبد الملك الإلكترونية - مكتبة حديثة لإدارة الكتب والاستعارة والقراءة" />
+    <meta name="keywords" content="مكتبة, كتب, استعارة, قراءة, إلكترونية, إدارة" />
+    <meta name="author" content="مكتبة عبد الملك الإلكترونية" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://almalek-library.com/" />
+    <meta property="og:title" content="مكتبة عبد الملك الإلكترونية" />
+    <meta property="og:description" content="مكتبة حديثة لإدارة الكتب والاستعارة والقراءة" />
+    <meta property="og:image" content="%PUBLIC_URL%/logo192.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://almalek-library.com/" />
+    <meta property="twitter:title" content="مكتبة عبد الملك الإلكترونية" />
+    <meta property="twitter:description" content="مكتبة حديثة لإدارة الكتب والاستعارة والقراءة" />
+    <meta property="twitter:image" content="%PUBLIC_URL%/logo192.png" />
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <title>مكتبة عبد الملك الإلكترونية</title>
+    
+    <style>
+      /* Critical CSS for loading state */
+      body {
+        margin: 0;
+        font-family: 'Cairo', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        direction: rtl;
+        background-color: #F8F9FA;
+      }
+      
+      /* Loading spinner */
+      .loading-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #F8F9FA;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+      
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid #E6F0FA;
+        border-top: 4px solid #0062D1;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      .loading-text {
+        margin-top: 1rem;
+        color: #6C757D;
+        font-family: 'Cairo', sans-serif;
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div style="text-align: center; padding: 2rem; background: #F8F9FA; min-height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+        <h1 style="color: #212529; font-family: 'Cairo', sans-serif;">مكتبة عبد الملك</h1>
+        <p style="color: #6C757D; font-family: 'Cairo', sans-serif; margin-top: 1rem;">
+          تحتاج إلى تفعيل JavaScript لتشغيل هذا التطبيق
+        </p>
+      </div>
+    </noscript>
+    
+    <!-- Loading state -->
+    <div id="loading-container" class="loading-container">
+      <div>
+        <div class="loading-spinner"></div>
+        <div class="loading-text">جاري التحميل...</div>
+      </div>
+    </div>
+    
+    <div id="root"></div>
+    
+    <script>
+      // Hide loading spinner when React app loads
+      window.addEventListener('DOMContentLoaded', function() {
+        const loadingContainer = document.getElementById('loading-container');
+        if (loadingContainer) {
+          loadingContainer.style.display = 'none';
+        }
+      });
+    </script>
+  </body>
+</html>

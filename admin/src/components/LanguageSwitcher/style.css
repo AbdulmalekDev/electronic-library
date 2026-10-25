@@ -1,0 +1,19 @@
+.langSwitcher {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.langSwitcher:hover {
+  background: #e0e0e0;
+}
+
+.langSwitcher svg {
+  font-size: 20px;
+}

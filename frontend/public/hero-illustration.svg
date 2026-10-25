@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background Glowing Orb -->
+  <circle cx="250" cy="250" r="180" fill="url(#grad1)" opacity="0.15"/>
+  <circle cx="250" cy="250" r="140" fill="url(#grad1)" opacity="0.25"/>
+
+  <!-- Isometric Library & Book Platform -->
+  <g filter="url(#shadow)">
+    <!-- Base Platform -->
+    <path d="M250 140 L410 230 L250 320 L90 230 Z" fill="#1e293b"/>
+    <path d="M90 230 L250 320 L250 350 L90 260 Z" fill="#0f172a"/>
+    <path d="M410 230 L250 320 L250 350 L410 260 Z" fill="#334155"/>
+
+    <!-- Open Digital Book -->
+    <!-- Left Page -->
+    <path d="M250 200 C210 180 160 185 130 200 L130 260 C160 245 210 240 250 260 Z" fill="url(#bookGrad)"/>
+    <!-- Right Page -->
+    <path d="M250 200 C290 180 340 185 370 200 L370 260 C340 245 290 240 250 260 Z" fill="url(#bookGrad)"/>
+    <!-- Book Spine -->
+    <path d="M248 200 L252 200 L252 260 L248 260 Z" fill="#3b82f6"/>
+
+    <!-- Digital Lines on Book -->
+    <line x1="150" y1="215" x2="225" y2="210" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/>
+    <line x1="150" y1="228" x2="210" y2="223" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="150" y1="240" x2="220" y2="235" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+
+    <line x1="275" y1="210" x2="350" y2="215" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/>
+    <line x1="290" y1="223" x2="350" y2="228" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="280" y1="235" x2="350" y2="240" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Floating Knowledge Elements -->
+    <!-- Floating Star 1 -->
+    <path d="M200 130 L205 140 L215 145 L205 150 L200 160 L195 150 L185 145 L195 140 Z" fill="#fbbf24"/>
+    <!-- Floating Star 2 -->
+    <path d="M310 110 L314 118 L322 122 L314 126 L310 134 L306 126 L298 122 L306 118 Z" fill="#38bdf8"/>
+    <!-- Floating Badge -->
+    <circle cx="250" cy="120" r="18" fill="#3b82f6"/>
+    <path d="M243 120 L248 125 L257 116" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

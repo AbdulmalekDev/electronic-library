@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap');
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+html[dir="rtl"] body {
+  font-family: "Cairo", sans-serif !important;
+}
+
+html[dir="rtl"] {
+  direction: rtl;
+}
+
+html[dir="rtl"] * {
+  text-align: right;
+}
+
+html[dir="rtl"] .ms-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+html[dir="rtl"] .me-auto {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+
+html[dir="rtl"] .ps-3 {
+  padding-left: 0 !important;
+  padding-right: 1rem !important;
+}
+
+html[dir="rtl"] .pe-3 {
+  padding-right: 0 !important;
+  padding-left: 1rem !important;
+}
+
+
+
+html[dir="rtl"] .main .sidebarWrapper .siderbar {
+  left: auto !important;
+  right: 0 !important;
+}
+
+html[dir="rtl"] .main .sidebarWrapper.toggle .siderbar {
+  right: -100% !important;
+}
+
+html[dir="rtl"] #notifications .MuiPaper-elevation {
+  right: auto !important;
+  left: 240px !important;
+}
+
+html[dir="rtl"] .dropdownInfo {
+  padding-left: 0 !important;
+  padding-right: 15px !important;
+}
+
+
+html[dir="rtl"] .swiper-button-next {
+  left: 10px !important;
+  right: auto !important;
+}
+
+html[dir="rtl"] .swiper-button-prev {
+  right: 10px !important;
+  left: auto !important;
+}
+
+
+html[dir="rtl"] input,
+html[dir="rtl"] textarea {
+  text-align: right;
+}
+
+html[dir="rtl"] .form-control {
+  padding-right: 15px !important;
+  padding-left: 40px !important;
+}
+
+
+/* ===== HEADER RTL FIX ===== */
+html[dir="rtl"] .header,
+html[dir="rtl"] .topHeader {
+  direction: rtl;
+}
+
+/* الأيقونات (سلة – حساب – لغة) */
+html[dir="rtl"] .header .icons,
+html[dir="rtl"] .header .part3 {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  flex-direction: row-reverse;
+}
+
+/* منع الاختفاء */
+html[dir="rtl"] .header svg {
+  visibility: visible !important;
+}
+
+
+html[dir="rtl"] .ms-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+html[dir="rtl"] .me-auto {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+
+html[dir="rtl"] .part3 {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .languageSwitcher {
+  margin-left: 0 !important;
+  margin-right: 15px;
+}
+
+html[dir="rtl"] .languageSwitcherDropdown {
+  right: auto !important;
+  left: 0 !important;
+}
+
+html[dir="rtl"] .iconWithText {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .iconWithText svg {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .arrow {
+  transform: scaleX(-1);
+}
+
+/* =========================
+   RTL SUPPORT (Arabic)
+========================= */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* عكس المحاذاة العامة */
+[dir="rtl"] .text-left { text-align: right !important; }
+[dir="rtl"] .text-right { text-align: left !important; }
+
+/* Header */
+[dir="rtl"] header {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] header .part2 {
+  padding-left: 0;
+  padding-right: 50px;
+}
+
+/* Search Box */
+[dir="rtl"] .SearchBox input {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Account */
+[dir="rtl"] .myAcc {
+  text-align: right !important;
+}
+
+[dir="rtl"] .myAcc .userInfo {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+/* Sidebar */
+[dir="rtl"] .main .sidebarWrapper .siderbar {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .main .sidebarWrapper.toggle .siderbar {
+  right: -100%;
+}
+
+[dir="rtl"] .main .sidebarWrapper .siderbar ul li button {
+  text-align: right;
+  justify-content: flex-start;
+}
+
+[dir="rtl"] .main .sidebarWrapper .siderbar ul li button .icon {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+[dir="rtl"] .main .sidebarWrapper .siderbar ul li button .arrow {
+  margin-left: 0;
+  margin-right: auto;
+  transform: rotate(180deg);
+}
+
+/* Submenu */
+[dir="rtl"] .main .sidebarWrapper .siderbar ul .submenu {
+  padding: 0 45px 0 0;
+}
+
+[dir="rtl"] .main .sidebarWrapper .siderbar ul .submenu::before {
+  left: auto;
+  right: 25px;
+}
+
+/* Content */
+[dir="rtl"] .main .content {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Dropdowns */
+[dir="rtl"] .dropdownInfo {
+  padding-left: 0;
+  padding-right: 15px;
+}
+
+/* Buttons with icons */
+[dir="rtl"] button svg {
+  margin-left: 0 !important;
+  margin-right: 7px !important;
+}
+
+/* Tables */
+[dir="rtl"] table th,
+[dir="rtl"] table td {
+  text-align: right;
+}
+
+/* Forms */
+[dir="rtl"] .form .form-group input,
+[dir="rtl"] .form .form-group textarea {
+  padding-left: 0;
+  padding-right: 15px;
+}
+
+/* Login icons */
+[dir="rtl"] .loginSection .loginBox .wrapper .form-group .icon {
+  left: auto;
+  right: 10px;
+}
+
+[dir="rtl"] .toggleShowPassword {
+  right: auto;
+  left: 8px;
+}
+
+/* Pagination */
+[dir="rtl"] .pagination {
+  direction: rtl;
+}
+
+/* Swiper */
+[dir="rtl"] .swiper {
+  direction: rtl;
+}
+/* ======================
+   HEADER RTL
+====================== */
+
+[dir="rtl"] header {
+  direction: rtl;
+}
+
+[dir="rtl"] header .row,
+[dir="rtl"] header .headerWrapper,
+[dir="rtl"] header .part1,
+[dir="rtl"] header .part2,
+[dir="rtl"] header .part3 {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] header .logoWrapper {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+[dir="rtl"] header .searchBox input {
+  text-align: right;
+  padding-right: 15px;
+  padding-left: 0;
+}
+
+[dir="rtl"] header .searchBox button {
+  left: 10px;
+  right: auto;
+}
+[dir="rtl"] header .myAcc {
+  text-align: right;
+}
+
+[dir="rtl"] header .myAcc .userImg {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+[dir="rtl"] header .myAcc .userInfo {
+  padding-left: 0;
+  padding-right: 10px;
+}
+[dir="rtl"] header .cartTab .count {
+  right: auto;
+  left: -6px;
+}
+[dir="rtl"] .dropdown-menu {
+  right: 0 !important;
+  left: auto !important;
+  text-align: right;
+}
+[dir="rtl"] .languageSwitcher {
+  margin-left: 0;
+  margin-right: 10px;
+}
+[dir="rtl"] header svg {
+  margin-left: 0 !important;
+  margin-right: 6px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+   GLOBAL RTL
+================================ */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* ===============================
+   HEADER
+================================ */
+[dir="rtl"] header {
+  direction: rtl;
+}
+
+[dir="rtl"] header .part2 {
+  padding-left: 0;
+  padding-right: 50px;
+}
+
+[dir="rtl"] header .logo {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] header svg {
+  margin-left: 0 !important;
+  margin-right: 6px !important;
+}
+
+/* ===============================
+   SEARCH BOX
+================================ */
+[dir="rtl"] .SearchBox {
+  direction: rtl;
+}
+
+[dir="rtl"] .SearchBox input {
+  text-align: right;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+[dir="rtl"] .SearchBox svg {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+/* ===============================
+   ACCOUNT BOX
+================================ */
+[dir="rtl"] .myAcc {
+  text-align: right !important;
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .myAcc .userInfo {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+/* ===============================
+   DROPDOWNS
+================================ */
+[dir="rtl"] .dropdown-menu,
+[dir="rtl"] .MuiPaper-elevation {
+  left: auto !important;
+  right: 0 !important;
+  text-align: right;
+}
+
+/* ===============================
+   SIDEBAR
+================================ */
+[dir="rtl"] .main .sidebarWrapper {
+  direction: rtl;
+}
+
+[dir="rtl"] .main .sidebarWrapper .siderbar {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .main .sidebarWrapper.toggle .siderbar {
+  right: -100%;
+}
+
+[dir="rtl"] .main .sidebarWrapper .siderbar ul li button {
+  text-align: right;
+  justify-content: flex-start;
+}
+
+[dir="rtl"] .main .sidebarWrapper .siderbar ul li button .icon {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+[dir="rtl"] .main .sidebarWrapper .siderbar ul li button .arrow {
+  margin-left: 0;
+  margin-right: auto;
+  transform: rotate(180deg);
+}
+
+/* ===============================
+   SUBMENU
+================================ */
+[dir="rtl"] .main .sidebarWrapper .siderbar ul .submenu {
+  padding-left: 0;
+  padding-right: 45px;
+}
+
+[dir="rtl"] .main .sidebarWrapper .siderbar ul .submenu::before {
+  left: auto;
+  right: 25px;
+}
+
+/* ===============================
+   CONTENT AREA
+================================ */
+[dir="rtl"] .main .content {
+  direction: rtl;
+}
+
+[dir="rtl"] .right-content {
+  padding-right: 30px;
+  padding-left: 0;
+}
+
+/* ===============================
+   TABLES
+================================ */
+[dir="rtl"] table,
+[dir="rtl"] th,
+[dir="rtl"] td {
+  text-align: right !important;
+}
+
+[dir="rtl"] .tableFooter .pagination {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* ===============================
+   FORMS
+================================ */
+[dir="rtl"] input,
+[dir="rtl"] textarea {
+  text-align: right;
+}
+
+[dir="rtl"] .form-group .icon {
+  left: auto;
+  right: 10px;
+}
+
+/* ===============================
+   BADGES & TAGS
+================================ */
+[dir="rtl"] .badges-inline {
+  justify-content: flex-start;
+}
+
+/* ===============================
+   IMAGES & UPLOAD
+================================ */
+[dir="rtl"] .imgUploadBox {
+  direction: rtl;
+}
+
+[dir="rtl"] .imgUploadBox .remove {
+  right: auto !important;
+  left: -7px !important;
+}
+
+/* ===============================
+   PRODUCT DETAILS
+================================ */
+[dir="rtl"] .productDetailsEction {
+  direction: rtl;
+}
+
+[dir="rtl"] .productDetailsEction .row {
+  flex-direction: row-reverse;
+}
+
+/* ===============================
+   CLOSE BUTTONS
+================================ */
+[dir="rtl"] .close_,
+[dir="rtl"] .toggleShowPassword {
+  right: auto !important;
+  left: 10px !important;
+}
+
+/* إضافة دعم اللغة العربية */
+body[dir="rtl"] {
+    direction: rtl; /* تغيير اتجاه النص إلى اليمين */
+    text-align: right; /* محاذاة النصوص لليمين */
+}
+
+/* الهيدر عند اللغة العربية */
+body[dir="rtl"] header {
+    text-align: right;
+}
+
+/* القوائم الجانبية */
+body[dir="rtl"] .main .sidebarWrapper .siderbar ul li button {
+    text-align: right; /* محاذاة أزرار القائمة لليمين */
+    justify-content: flex-end; /* أيقونات على اليسار */
+}
+
+body[dir="rtl"] .main .sidebarWrapper .siderbar ul li button .icon {
+    margin-left: 0;
+    margin-right: 10px; /* قلب الهوامش */
+}
+
+/* القوائم الفرعية */
+body[dir="rtl"] .main .sidebarWrapper .siderbar ul .submenu li a {
+    text-align: right;
+    padding-right: 45px; /* بدل padding-left */
+    padding-left: 0;
+}
+
+/* تعديل الهيدر لزر البحث */
+body[dir="rtl"] .SearchBox input {
+    padding-right: 0; 
+    padding-left: 10px; /* بدل padding-left */
+}
+
+/* تعديل بعض الأيقونات في RTL */
+body[dir="rtl"] .imgUploadBox .uploadBox .remove {
+    right: auto;
+    left: -7px; /* بدل right */
+}
+
+/* تعديل badges و dropdowns للغة العربية */
+body[dir="rtl"] .badges-inline {
+    flex-direction: row-reverse;
+}
+
+body[dir="rtl"] .countryDrop .icon {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* تعديل slider و Swiper للغة العربية */
+body[dir="rtl"] .swiper-rtl .swiper-button-prev {
+    left: auto;
+    right: 0;
+}
+
+body[dir="rtl"] .swiper-rtl .swiper-button-next {
+    right: auto;
+    left: 0;
+}
+
+/* تعديل بعض البادئات العامة */
+body[dir="rtl"] .right-content {
+    padding-left: 30px; 
+    padding-right: 88px;
+}
+
+body[dir="rtl"] .dashboardBoxWrapper .dashboardBox .chart {
+    left: auto;
+    right: 20px;
+}
+
+body[dir="rtl"] .dashboardBoxWrapper .dashboardBox .bottomEle {
+    left: auto;
+    right: 25px;
+}

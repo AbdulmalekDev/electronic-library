@@ -1,0 +1,346 @@
+/* Import Arabic font */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap');
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p, span, h1, h2, h3, h4, h5, h6, a, label {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Theme variables */
+:root {
+  --bg-default: #F8F9FA;
+  --bg-paper: #FFFFFF;
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --border-color: rgba(0, 0, 0, 0.08);
+
+  /* Primary & Brand */
+  --primary-main: #1E3A8A;
+  --primary-light: #3B82F6;
+  --primary-dark: #1E3A8A;
+
+  /* Success */
+  --success-main: #16A34A;
+  --success-light: #4ADE80;
+
+  /* Warning */
+  --warning-main: #F59E0B;
+  --warning-dark: #D97706;
+
+  /* Error */
+  --error-main: #EF4444;
+  --error-dark: #B91C1C;
+
+  /* Neutral */
+  --neutral-500: #6B7280;
+
+  /* Chart Colors */
+  --chart-history: #F59E0B;
+  --chart-tech: #16A34A;
+  --chart-science: #3B82F6;
+  --chart-novels: #1E3A8A;
+}
+
+[data-theme='dark'] {
+  --bg-default: #0F1014;
+  --bg-paper: #16171D;
+  --text-primary: #F1F3F4;
+  --text-secondary: #9AA0A6;
+  --border-color: rgba(255, 255, 255, 0.08);
+
+  --primary-light: #60A5FA;
+}
+
+body {
+  font-family: 'Cairo', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+  text-align: right;
+  background-color: var(--bg-default);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-default);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.p-1 {
+  padding: 0.5rem;
+}
+
+.p-2 {
+  padding: 1rem;
+}
+
+.p-3 {
+  padding: 1.5rem;
+}
+
+.p-4 {
+  padding: 2rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+/* Loading animations */
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fade animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 98, 209, 0.12);
+}
+
+/* Button animations */
+.btn-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 98, 209, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 98, 209, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 98, 209, 0);
+  }
+}
+
+/* Error states */
+.error-text {
+  color: #DC3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.success-text {
+  color: #198754;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Form styles */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid var(--border-color);
+  background-color: var(--bg-paper);
+  color: var(--text-primary);
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: 'Cairo', sans-serif;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #0062D1;
+  box-shadow: 0 0 0 3px rgba(0, 98, 209, 0.1);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+
+  .text-mobile-center {
+    text-align: center;
+  }
+
+
+ 
+}
+
+@media (min-width: 769px) {
+  .hide-desktop {
+    display: none !important;
+  }
+
+
+
+  
+}
+
+/* Responsive layout adjustments */
+@media (min-width: 375px) and (max-width: 600px) {
+  .book-grid-mobile {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+    
+  }
+}
+
+/* RTL specific adjustments */
+[dir="rtl"] .MuiListItemIcon-root {
+  margin-right: 0;
+  margin-left: 12px;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+

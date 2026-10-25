@@ -1,0 +1,31 @@
+{
+  "short_name": "مكتبة عبد الملك",
+  "name": "مكتبة عبد الملك الإلكترونية",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0062D1",
+  "background_color": "#F8F9FA",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "ar",
+  "categories": ["education", "books", "library"],
+  "description": "مكتبة إلكترونية حديثة لإدارة الكتب والاستعارة والقراءة",
+  "dir": "rtl"
+}
