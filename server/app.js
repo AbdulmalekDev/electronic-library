@@ -70,16 +70,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.options("*", cors(corsOptions));
-// CORS configuration
-// const corsOptions = {
-//     origin: [
-//         process.env.FRONTEND_URL || 'http://localhost:3000',
-//         process.env.ADMIN_URL || 'http://localhost:3001'
-//     ],
-//     credentials: true,
-//     optionsSuccessStatus: 200
-// };
-// app.use(cors(corsOptions));
+
 
 // Security middleware
 app.use(helmet({
