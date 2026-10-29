@@ -2,15 +2,11 @@ import React, { useState, useEffect, useContext } from "react";
 import { MyContext } from "../../App";
 import api from "../../services/api";
 import {
-  FaSearch,
   FaStar,
   FaComment,
   FaCheckCircle,
   FaTimesCircle,
   FaTrash,
-  FaThumbsUp,
-  FaThumbsDown,
-  FaBook,
   FaEraser,
 } from "react-icons/fa";
 import { useTranslation } from "react-i18next";

@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, {  useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { MyContext } from "../../App";
+
 import { useAuth } from "../../contexts/AuthContext";
 import { useNotification } from "../../contexts/NotificationContext";
 import { MdEmail } from "react-icons/md";
