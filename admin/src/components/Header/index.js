@@ -1,14 +1,12 @@
-import { React, useContext, useEffect, useState } from "react";
+import { React, useContext,  useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/images/download.png";
 import SearchBox from "../SearchBox";
-import { MdMenuOpen, MdOutlineMenu, MdOutlineLightMode, MdOutlineMailOutline, MdOutlineMail, MdOutlineDarkMode, MdCheckCircle } from "react-icons/md";
-import { IoCartOutline, IoShieldHalfSharp, IoMenu } from "react-icons/io5";
+import { MdMenuOpen, MdOutlineMenu, MdOutlineLightMode,MdOutlineDarkMode, MdCheckCircle } from "react-icons/md";
+import { IoCartOutline, IoShieldHalfSharp } from "react-icons/io5";
 import { IoMdLogOut } from "react-icons/io";
 import { FaRegBell, FaUserPlus } from "react-icons/fa6";
-import userImge from "../../assets/images/userimg.webp";
 import { MyContext } from "../../App";
-import UserAvatarImgComponent from "../userAvatarimg";
 import LanguageSwitcher from "../../components/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "../../contexts/AuthContext";
